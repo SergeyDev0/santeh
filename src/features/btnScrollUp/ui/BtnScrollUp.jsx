@@ -6,7 +6,6 @@ const BtnScrollUp = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    console.log(document.scrollHeight === document.offsetHeight)
     function handleScroll() {
       if (window.scrollY > 80) {
         setIsVisible(true);
