@@ -18,7 +18,7 @@ const Contacts = () => {
                 </div>
                 <div className="contacts-list__col">
                   <p className="contacts-list__item_title">Адрес</p>
-                  <a href="" className="contacts-list__item_description">Г. Ставрополь, ул. Десантников, д. 35</a>
+                  <a href="https://yandex.ru/maps/-/CDbYaQ-n" className="contacts-list__item_description">Г. Ставрополь, ул. Десантников, д. 35</a>
                 </div>
               </li>
               <li className="contacts-list__item">
@@ -27,7 +27,7 @@ const Contacts = () => {
                 </div>
                 <div className="contacts-list__col">
                   <p className="contacts-list__item_title">Режим работы</p>
-                  <a href="" className="contacts-list__item_description">Пн-Вс: 9:00-21:00</a>
+                  <p className="contacts-list__item_description">Пн-Вс: 9:00-21:00</p>
                 </div>
               </li>
               <li className="contacts-list__item">
@@ -36,7 +36,7 @@ const Contacts = () => {
                 </div>
                 <div className="contacts-list__col">
                   <p className="contacts-list__item_title">Телефон</p>
-                  <a href="" className="contacts-list__item_description">+7 (968) 677-33-33</a>
+                  <a href="tel:+79686773333" className="contacts-list__item_description">+7 (968) 677-33-33</a>
                 </div>
               </li>
               <li className="contacts-list__item">
@@ -45,7 +45,7 @@ const Contacts = () => {
                 </div>
                 <div className="contacts-list__col">
                   <p className="contacts-list__item_title">Email</p>
-                  <a href="" className="contacts-list__item_description">santexdom26@mail.ru</a>
+                  <a href="mailto:santexdom26@mail.ru" className="contacts-list__item_description">santexdom26@mail.ru</a>
                 </div>
               </li>
             </ul>
