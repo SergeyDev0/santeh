@@ -10,6 +10,10 @@
   background-color: #fff;
   transition: .2s top;
 
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+
   &.show {
     top: calc(100% - 40px - 2rem);
   }

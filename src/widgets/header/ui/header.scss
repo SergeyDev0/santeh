@@ -7,18 +7,32 @@
   padding: 1rem 0;
   box-shadow: rgb(223, 223, 223) 1px 1px 4px 0px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 4;
+
 
   &-wrapper {
     width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1240px) {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
   }
   
   &__nav-list {
     display: flex;
     gap: 3rem;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
 
     &__item {
       position: relative;

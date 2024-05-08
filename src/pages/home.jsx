@@ -1,5 +1,5 @@
 import React from 'react';
-import { Swiper, SwiperSlide} from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import CatalogCard from '../widgets/catalogCard/ui/CatalogCard';
 import Layout from './../app/layout/Layout';
@@ -22,17 +22,45 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="home__banner-wrapper">
-        <a href='/contacts' className="home__banner">
-          <img className='home__banner--img' src={banner1} />
-        </a>
-        <a href='/catalog' className="home__banner">
-          <img className='home__banner--img' src={banner2} />
-        </a>
-        <a href='/catalog' className="home__banner">
-          <img className='home__banner--img' src={banner3} />
-        </a>
-      </div>
+      <section className='home__sections home__banner-wrapper'>
+        <Swiper
+          className='home__swiper'
+          spaceBetween={24}
+          slidesPerView={3}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            850: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+          }}
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+        >
+          <SwiperSlide>
+            <a href='/contacts' className="home__banner">
+              <img className='home__banner--img' src={banner1} />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a href='/catalog' className="home__banner">
+              <img className='home__banner--img' src={banner2} />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a href='/catalog' className="home__banner">
+              <img className='home__banner--img' src={banner3} />
+            </a>
+          </SwiperSlide>
+        </Swiper> 
+      </section>
       <section className='home__sections'>
         <div className='slider-h'>
           <div className="slider-h__icon-wrapper">
@@ -44,6 +72,20 @@ const Home = () => {
           className='home__swiper'
           spaceBetween={24}
           slidesPerView={3}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            850: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+          }}
           modules={[Pagination]}
           pagination={{ clickable: true }}
         >
@@ -65,8 +107,22 @@ const Home = () => {
         </div>
         <Swiper
           className='home__swiper'
-          spaceBetween={24}
           slidesPerView={3}
+          spaceBetween={24}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 24,
+            },
+            850: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+          }}
           modules={[Pagination]}
           pagination={{ clickable: true }}
         >

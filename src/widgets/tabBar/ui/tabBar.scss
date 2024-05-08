@@ -1,0 +1,35 @@
+.tab_bar {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  z-index: 4;
+
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  &__list {
+    padding: 12px 28px;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    width: 290px;
+
+    &-item{
+      position: relative;
+    }
+  }
+}

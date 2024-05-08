@@ -9,9 +9,22 @@
     width: 1200px;
     display: flex;
     justify-content: flex-end;
+
+    @media screen and (max-width: 1240px) {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
   }
 
   &__copyright {
     color: #fff;
+    
+    @media screen and (max-width: 900px) {
+      text-align: center;
+    }
   }
 }
