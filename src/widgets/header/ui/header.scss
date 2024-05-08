@@ -9,6 +9,9 @@
   background-color: #fff;
   z-index: 4;
 
+  @media screen and (max-width: 800px) {
+    position: static;
+  }
 
   &-wrapper {
     width: 1200px;

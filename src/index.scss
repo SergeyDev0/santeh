@@ -73,6 +73,7 @@
 	&__img {
 		height: 100%;
 		width: auto;
+		max-width: 100%;
 
 		&-wrapper {
 			flex-grow: 1;
@@ -219,8 +220,16 @@
 	margin-bottom: 2rem;
 	width: 100%;
 
+	@media screen and (max-width: 620px) {
+		margin-bottom: 0;
+	}
+
 	& .col {
 		margin-top: 2rem;
+
+		@media screen and (max-width: 620px) {
+			margin-top: 0;
+		}
 	}
 
 	& .map {
@@ -234,6 +243,11 @@
 		overflow: hidden;
 		position: relative;
 		mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+		@media screen and (max-width: 620px) {
+			margin-top: 0;
+			height: 350px;
+		}
 	}
 
 	&-list {
@@ -245,6 +259,12 @@
 		margin: auto;
 		margin-top: 1rem;
 		margin-bottom: 1rem;
+
+		@media screen and (max-width: 620px) {
+			display: flex;
+			flex-direction: column;
+			margin-top: 0;
+		}
 
 		&__item {
 			display: flex;
@@ -274,6 +294,10 @@
 		margin-top: 3rem;
 		width: 100%;
 		height: auto;
+
+		@media screen and (max-width: 600px) {
+			margin-top: 2rem;
+		}
 
 		&--img {
 			width: 100%;
